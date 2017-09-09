@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container width">
+    <div class="row center-align">
+        <img src="../assets/img/hawk48.png" class="circle responsive-image">
+        <p class="flow-text">Source Swapper</p>
+    </div>
+    <hr>
+    <div class="row center-align margin">
+        <div class="col s12 valign-wrapper">
+            <div class="input-field">
+                <input id="imageUrl" class="validate">
+            </div>
+            <div class="switch valign-wrapper right-align">
+                <label>
+                    <input id="radio" type="checkbox">
+                    <span class="lever"></span>
+                </label>
+                <button id="save">Save</button>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <img id="image" src="">
+    </div>
+</div>
+<script src="popup.js"></script>
+</body>

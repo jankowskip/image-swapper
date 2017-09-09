@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Image Swapper",
+  "version": "1.0",
+  "description": "",
+
+  "icons": {
+    "16": "assets/img/hawk16.png",
+    "48": "assets/img/hawk48.png",
+    "128": "assets/img/hawk128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "assets/img/hawk16.png",
+      "48": "assets/img/hawk48.png",
+      "128": "assets/img/hawk128.png"
+    },
+    "default_title": "Jastrzab Dev",
+    "default_popup": "popup/popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": [],
+      "js": ["content/content.js"]
+    }
+  ],
+
+  "permissions": [
+    "<all_urls>", "tabs", "webNavigation", "storage"
+  ]
+
+}
